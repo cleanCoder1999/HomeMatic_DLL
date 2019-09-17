@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("003_Homatic_DLL")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("LibHomeMatic")]
+[assembly: AssemblyDescription("A library used for communicating with a HomeMatic device, in order to, gain convenient access to remote actuators.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("003_Homatic_DLL")]
+[assembly: AssemblyProduct("LibHomeMatic")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
