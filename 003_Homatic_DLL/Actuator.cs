@@ -11,6 +11,24 @@ namespace HomeMatic
         public Actuator(IHomeMaticProxy homeMaticProxy)
         {
             this.homeMaticProxy = homeMaticProxy;
+            try
+            {
+                if (ProxyIsNull())
+                    throw new Exception();
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("[EXCEPTION]: in class Actuator: in Actuator(IHomeMaticProxy homeMaticProxy)");
+            }
+        }
+        private bool ProxyIsNull()
+        {
+            bool proxyIsNull = false;
+            if (homeMaticProxy.Equals(null))
+            {
+                proxyIsNull = true;
+            }
+            return proxyIsNull;
         }
 
         public void SetAddress(

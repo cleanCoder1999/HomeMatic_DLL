@@ -43,16 +43,19 @@ namespace HomeMatic
                 /**/
             }
         }
-        public bool IsAlive()
+        public bool ProxyIsAlive()
         {
-            bool IsAlive = false;
+            bool ProxyIsAlive = false;
             try
             {
-                IsAlive = homeMaticProxy.Ping(url);
+                ProxyIsAlive = homeMaticProxy.KeepAlive;
             }
-            catch (Exception) { }
+            catch (Exception)
+            {
+                /**/
+            }
 
-            return IsAlive;
+            return ProxyIsAlive;
         }
 
         public string[] GetAnyDistinctAddress()
